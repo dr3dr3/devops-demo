@@ -1,6 +1,6 @@
 # Trigger workflows on push to trunk (main branch)
-name: Push to Trunk Events
-run-name: Push to Trunk of SLFB ${{ github.ref_name }}
+name: ON-PR-CLOSED
+run-name: PR Closed - ${{ github.ref_name }}
 
 on:
   pull_request:

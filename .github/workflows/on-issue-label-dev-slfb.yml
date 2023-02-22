@@ -1,6 +1,6 @@
 # Trigger workflows on issues events
-name: Issue Labelled STATE-DEV-SLFB
-run-name: DEV-SLFB
+name: ON-ISSUE-LABELED
+run-name: Issue Labeled - ${{ github.event.label.name }}
 
 on:
   issues:
