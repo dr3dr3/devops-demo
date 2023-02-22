@@ -1,0 +1,40 @@
+# Trigger workflows on issues events
+name: Issue Labelled STATE-DEV-SLFB
+run-name: DEV-SLFB
+
+on:
+  issues:
+    types: [labeled]
+
+jobs: 
+
+  testing:
+    name: Test Trigger
+    if: ${{ github.event.label.name == 'state-dev-slfb' }}
+    runs-on: ubuntu-latest 
+    steps:
+      - name: Message
+        run: echo "### Test Passed :thumbsup:" >> $GITHUB_STEP_SUMMARY
+
+# WoW - Convert to issue (in this repo) for SLFB only
+# Convention: "Feature name YYMMDD-N"
+# Example: "Slides about toggles 230214-1" (first increment of overall Toggle slides)
+#
+# Workflow:
+# Pre-req: Add label: SLFB and convert to issue in solution repo
+# On: Issue: [open]
+# If: github.event.label.name == 'SLFB'
+# ...Create branch...
+# git checkout -b (issue title)
+# git commit something
+# git push origin
+# ... Create PR...
+# gh pr create --title (something) --body (include title of issue... so auto links PR to issue) --reviewer dr3dr3 (or team name in org)
+# GH_TOKEN: ${{ github.token }} (maybe use PAT... if need to trigger PR create workflows)
+# ... Create Codespace...
+# gh codespace create --repo xxx --branch xxx --display-name --retention-period '24h' --default-permissions
+# ... Update Issue...
+# get link to codespace and add URL to issue
+
+
+# https://seantrane.com/posts/logical-colorful-github-labels-18230/
