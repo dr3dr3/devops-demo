@@ -15,6 +15,9 @@ jobs:
     uses: dr3dr3/ss-pipeline/.github/workflows/continuous-integration.yml@main
     with: 
       ss-solution: 'reveal-md'
+    permissions:
+      contents: read
+      pull-requests: write
     secrets: inherit
 
 
