@@ -1,0 +1,20 @@
+# Trigger workflows on pull request review events
+name: Pull Request Review Approved
+run-name: PR Approved ${{ github.ref_name }}
+
+on:
+  pull_request_review:
+    types: [submitted]
+
+jobs: 
+
+  # Continuous integration workflow in 'ss-pipeline' repo
+  continuous-integration:
+    name: CI
+    if: github.event.review.state == 'approved'
+    uses: dr3dr3/ss-pipeline/.github/workflows/continuous-integration.yml@main
+    with: 
+      ss-solution: 'reveal-md'
+    secrets: inherit
+
+
