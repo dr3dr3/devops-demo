@@ -1,6 +1,6 @@
 # Trigger workflows on pull request review events
 name: ON-PR-APPROVED
-run-name: PR Approved - ${{ github.event.pull_request.head.ref }}
+run-name: PR approved for ${{ github.event.pull_request.head.ref }}
 
 on:
   pull_request_review:
