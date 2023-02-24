@@ -17,7 +17,7 @@ jobs:
       ss-solution: 'reveal-md'
       slfb: ${{ github.event.pull_request.head.ref }}
     permissions:
-      contents: read
+      contents: write
       pull-requests: write
     secrets: inherit
 
