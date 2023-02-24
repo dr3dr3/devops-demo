@@ -1,6 +1,6 @@
 # Trigger workflows on pull request review events
 name: ON-PR-APPROVED
-run-name: PR Approved - ${{ github.head_ref }}
+run-name: PR Approved - ${{ github.event.pull_request.head.ref }}
 
 on:
   pull_request_review:
@@ -15,6 +15,10 @@ jobs:
     uses: dr3dr3/ss-pipeline/.github/workflows/continuous-integration.yml@main
     with: 
       ss-solution: 'reveal-md'
+      slfb: ${{ github.event.pull_request.head.ref }}
+    permissions:
+      contents: write
+      pull-requests: write
     secrets: inherit
 
 
