@@ -1,0 +1,19 @@
+# Trigger workflows on push to short-lived feature branch (SLFB)
+name: Push to Main Branch
+run-name: Push to Main ${{ github.ref_name }}
+
+on:
+  push:
+    branches: [main]
+
+jobs: 
+
+  testing:
+    name: Test Trigger
+    runs-on: ubuntu-latest 
+    steps:
+      - name: Message
+        run: echo "### Test Passed :thumbsup:" >> $GITHUB_STEP_SUMMARY
+
+
+# if commit message contains "[ci]" then build and test and update PR 
