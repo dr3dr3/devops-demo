@@ -1,6 +1,6 @@
 # Trigger workflows on push to trunk (main branch)
 name: ON-PR-CLOSED
-run-name: PR Closed - ${{ github.ref_name }}
+run-name: PR Closed
 
 on:
   pull_request:
