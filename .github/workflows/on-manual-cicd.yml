@@ -1,6 +1,6 @@
 # Manually trigger build and deploy dispatch to Stage
-name: Manually Trigger CICD
-run-name: ${{ github.actor }} triggered CICD workflow for Stage Environment
+name: ON-MANUAL-CICD
+run-name: CICD workflow for Stage Environment triggered by ${{ github.actor }}
 
 on:
   workflow_dispatch:
