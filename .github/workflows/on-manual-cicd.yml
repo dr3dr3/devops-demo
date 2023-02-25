@@ -1,0 +1,28 @@
+# Manually trigger build and deploy dispatch to Stage
+name: Manually Trigger CICD
+run-name: ${{ github.actor }} triggered CICD workflow for Stage Environment
+
+on:
+  workflow_dispatch:
+    inputs:
+      target-ref:
+        description: 'Tag or Main'
+        required: true
+        default: 'main'
+        type: string
+
+jobs: 
+
+  # Continuous integration workflow in 'ss-pipeline' repo
+  continuous-integration:
+    name: STG
+    uses: dr3dr3/ss-pipeline/.github/workflows/continuous-integration.yml@main
+    with: 
+      ss-solution: 'reveal-md'
+      slfb: 'main'
+    permissions:
+      contents: write
+      pull-requests: write
+      pages: write
+      id-token: write
+    secrets: inherit
