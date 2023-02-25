@@ -1,0 +1,7 @@
+{
+    "theme": "night",
+    "highlightTheme": "stackoverflow-dark",
+    "template": "template.html",
+    "assets-dir": "assets",
+    "glob": "markdown/*.md"
+}
