@@ -1,10 +1,10 @@
 # Trigger workflows on push to short-lived feature branch (SLFB)
-name: ON-PUSH-SLFB
+name: ON-PUSH-MAIN-BRANCH
 run-name: Push to SLFB ${{ github.ref_name }}
 
 on:
   push:
-    branches-ignore: [main]
+    branches: [main]
 
 jobs: 
 
