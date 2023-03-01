@@ -18,3 +18,7 @@ jobs:
       target-ref: ${{ github.sha }}
       artefact-ref: ${{ github.sha }}
       deploy-target: 'ci'
+    permissions:
+      pages: write
+      id-token: write
+    secrets: inherit
