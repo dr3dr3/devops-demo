@@ -8,18 +8,31 @@ on:
 
 jobs: 
 
+  # Build static site using Reveal-MD
+  build-revealmd:
+    name: Build R-MD
+    if: ${{ inputs.ss-solution == 'reveal-md' }}
+    uses: ./.github/workflows/build-revealmd.yml
+    permissions:
+      contents: read
+    secrets: inherit
+    with: 
+      target-ref: ${{ github.sha }}
+      artefact-ref: ${{ github.sha }}
+      deploy-target: 'ci'
+
   # Deploy CI to GitHub Pages
   # Only run if commit message contain "[ci]"
   deploy-ci:
     name: Deploy CI
     if: ${{ contains(github.event.head_commit.message, '[ci]') }}    
     uses: dr3dr3/ss-pipeline/.github/workflows/deploy-github-pages.yml@main
-    with:
-      target-ref: ${{ github.sha }}
-      artefact-ref: ${{ github.sha }}
-      deploy-target: 'ci'
     permissions:
       contents: read
       pages: write
       id-token: write
     secrets: inherit
+    with:
+      target-ref: ${{ github.sha }}
+      artefact-ref: ${{ github.sha }}
+      deploy-target: 'ci'
