@@ -11,7 +11,7 @@ jobs:
   # Build static site using Reveal-MD
   build-revealmd:
     name: Build R-MD
-    if: ${{ inputs.ss-solution == 'reveal-md' }}
+    if: ${{ contains(github.event.head_commit.message, '[ci]') }} 
     uses: dr3dr3/ss-pipeline/.github/workflows/build-revealmd.yml@main
     permissions:
       contents: read
@@ -26,7 +26,6 @@ jobs:
   deploy-ci:
     name: Deploy CI
     needs: [build-revealmd]
-    if: ${{ contains(github.event.head_commit.message, '[ci]') }}    
     uses: dr3dr3/ss-pipeline/.github/workflows/deploy-github-pages.yml@main
     permissions:
       contents: read
