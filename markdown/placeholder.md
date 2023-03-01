@@ -8,7 +8,7 @@ Duh 😏
 
 ---
 
-<!-- .slide: data-background="./image1.png" -->
+<!-- .slide: data-visibility="hidden" -->
 
 # Hidden Slide
 
