@@ -8,7 +8,7 @@ Duh 😏
 
 ---
 
-# Explaining DevOps
+# To Explain DevOps
 
 By using a presentation 🤨
 
@@ -50,7 +50,7 @@ online presentations... an alternative to PowerPoint (bored emoji)
 
 Click down now to see features of this slide deck
 
----
+----
 
 # Click "O"
 
@@ -58,7 +58,7 @@ To see an overview of the slides
 
 (both horizontal and vertical)
 
----
+----
 
 # Click "S"
 
@@ -66,7 +66,7 @@ To see speaker view 👨‍💼
 
 (opens a second window)
 
----
+----
 
 # ➡️
 
@@ -76,11 +76,11 @@ Go left for the first key DevOps concept
 
 # Version Control
 
----
+----
 
 (definition)
 
----
+----
 
 Think of versioning a PowerPoint slide deck...
 
@@ -92,20 +92,20 @@ Think of versioning a PowerPoint slide deck...
 
 (Link to PowerPoint pain)
 
----
+----
 
 ## Git for Version Control
 
 Git is a powerful VC system used for X% of the software today. Companies like Microsoft, Atlassian, AWS provide Git as a
 service and with GitHub hugely popular
 
----
+----
 
 The content for this slide is in a Git code repository hosted by GitHub.
 
 (Link to repo)
 
----
+----
 
 ### By doing this we can...
 
@@ -115,34 +115,34 @@ The content for this slide is in a Git code repository hosted by GitHub.
 - Able to have multiple draft versions in flight
 - Can be fast and easy to manage
 
----
+----
 
 (Quote and link to article on using git for content version Control)
 
----
+----
 
 Reveal.JS and the software tools used to create this slide deck are in Git repos, many on GitHub.com
 
----
+----
 
 You could "clone" the repo we use to create this deck to create your own. Everything is covered here for you to create
 (with version Control) your own presentations (DevOps style)
 
 ## ヾ(⌐□_□)ノ.
 
----
+----
 
 Version Control is fundamental for DevOps
 
 # ➡️
 
----
+----
 
 More information:
 
 - How we use Semantic Versioning
 
----
+----
 
 ## Version Control + DevOps
 
@@ -154,7 +154,7 @@ It's not a DevOps thing
 
 But how it is used it is
 
----
+----
 
 🥷🏻
 
@@ -164,7 +164,7 @@ Enter the battle...
 
 ## 😫
 
----
+----
 
 ## Next ➡️
 
@@ -178,15 +178,15 @@ Introducing key DevOps concepts:
 
 # Small batches
 
----
+----
 
 (Lean concept)
 
----
+----
 
 # Trunk based development
 
----
+----
 
 (Is how we do small batches effectively, using version control)
 
@@ -194,11 +194,11 @@ Introducing key DevOps concepts:
 
 # Agile workflows
 
----
+----
 
 (Many teams using Agile practices now... Like Kanban boards, Scrum, SAFe... And tools like Trello, JIRA, Asana, etc)
 
----
+----
 
 Important to understand that Agile is a broad term...
 
@@ -206,13 +206,13 @@ What is most valuable is understanding the lessons learnt that led to the core p
 
 # 🤟
 
----
+----
 
 Agile is a way of working
 
 (Link to manifesto)
 
----
+----
 
 # Here
 
@@ -220,15 +220,15 @@ We use GitHub Projects to manage our Agile workflow using a simple Kanban board
 
 (Link)
 
----
+----
 
 Our Agile workflow encompasses how we make content and code changes in our version control Git repository
 
----
+----
 
 The workflow follows the DevOps practices of small batches and TBD
 
----
+----
 
 Value we get from these DevOs practices
 
@@ -237,7 +237,7 @@ Value we get from these DevOs practices
 - Fully tracked and visible to all involved
 - Ready for CI/CD (next topic)
 
----
+----
 
 More information:
 
@@ -247,6 +247,6 @@ More information:
 
 # Continuous integration
 
----
+----
 
 # End

@@ -1,6 +1,6 @@
 # Trigger workflows on push to short-lived feature branch (SLFB)
 name: ON-PUSH-MAIN-BRANCH
-run-name: Push to SLFB ${{ github.ref_name }}
+run-name: Push to MAIN branch
 
 on:
   push:
