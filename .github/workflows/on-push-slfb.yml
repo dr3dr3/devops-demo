@@ -12,7 +12,7 @@ jobs:
   build-revealmd:
     name: Build R-MD
     if: ${{ inputs.ss-solution == 'reveal-md' }}
-    uses: ./.github/workflows/build-revealmd.yml
+    uses: dr3dr3/ss-pipeline/.github/workflows/build-revealmd.yml
     permissions:
       contents: read
     secrets: inherit
