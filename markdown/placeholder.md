@@ -8,4 +8,12 @@ Duh 😏
 
 ---
 
+<!-- .slide: data-background="./image1.png" -->
+
+# Hidden Slide
+
+Dev Toggle at Slide level
+
+---
+
 # End

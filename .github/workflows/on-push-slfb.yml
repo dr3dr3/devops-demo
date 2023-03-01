@@ -8,12 +8,13 @@ on:
 
 jobs: 
 
-  testing:
-    name: Test Trigger
-    runs-on: ubuntu-latest 
-    steps:
-      - name: Message
-        run: echo "### Test Passed :thumbsup:" >> $GITHUB_STEP_SUMMARY
-
-
-# if commit message contains "[ci]" then build and test and update PR 
+  # Deploy CI to GitHub Pages
+  # Only run if commit message contain "[ci]"
+  deploy-ci:
+    name: Deploy CI
+    if: ${{ contains(github.event.head_commit.message, '[ci]') }}    
+    uses: ./.github/workflows/deploy-github-pages.yml
+    with:
+      target-ref: ${{ github.sha }}
+      artefact-ref: ${{ github.sha }}
+      deploy-target: 'ci'
