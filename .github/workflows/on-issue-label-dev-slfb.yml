@@ -8,22 +8,17 @@ on:
 
 jobs: 
 
-  create-slfb:
-    name: Create Branch
+  # Build static site using Reveal-MD
+  agile-dev:
+    name: Agile Dev
     if: ${{ github.event.label.name == 'state:slfb' }}
-    runs-on: ubuntu-latest 
-    steps:
+    uses: dr3dr3/ss-pipeline/.github/workflows/agile-development.yml@main
+    permissions:
+      contents: read
+      issues: write
+      ####
+    secrets: inherit
 
-      - name: Checkout Feature Branch
-        uses: actions/checkout@v3
-
-      - name: Issue Develop
-        run: gh issue develop --base main --name ${{ github.event.issue.title }}
-        env:
-          GH_TOKEN: ${{ github.token }}
-
-      - name: Message
-        run: echo "### Test Passed :thumbsup:" >> $GITHUB_STEP_SUMMARY
 
 # WoW - Convert to issue (in this repo) for SLFB only
 # Convention: "Feature name YYMMDD-N"
