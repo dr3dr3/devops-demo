@@ -8,11 +8,20 @@ on:
 
 jobs: 
 
-  testing:
-    name: Test Trigger
-    if: ${{ github.event.label.name == 'state-dev-slfb' }}
+  create-slfb:
+    name: Create Branch
+    if: ${{ github.event.label.name == 'state:slfb' }}
     runs-on: ubuntu-latest 
     steps:
+
+      - name: Checkout Feature Branch
+        uses: actions/checkout@v3
+
+      - name: Issue Develop
+        run: gh issue develop --base main --name ${{ github.event.issue.title }}
+        env:
+          GH_TOKEN: ${{ github.token }}
+
       - name: Message
         run: echo "### Test Passed :thumbsup:" >> $GITHUB_STEP_SUMMARY
 
