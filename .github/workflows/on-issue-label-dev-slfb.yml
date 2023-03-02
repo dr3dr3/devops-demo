@@ -14,7 +14,7 @@ jobs:
     if: ${{ github.event.label.name == 'state:slfb' }}
     uses: dr3dr3/ss-pipeline/.github/workflows/agile-development.yml@main
     permissions:
-      contents: read
+      contents: write
       issues: write
       ####
     secrets: inherit
