@@ -1,6 +1,6 @@
 # Trigger workflows on issues events
 name: ON-ISSUE-LABELED
-run-name: Setup labels in relevant repositories
+run-name: Setup labels
 
 on:
   push:
