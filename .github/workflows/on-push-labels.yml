@@ -1,0 +1,22 @@
+# Trigger workflows on issues events
+name: ON-ISSUE-LABELED
+run-name: Setup labels in relevant repositories
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - .github/labels.yml
+      - .github/workflows/labels-in-repos.yml
+
+jobs: 
+
+  # Build static site using Reveal-MD
+  labels:
+    name: Labels
+    uses: dr3dr3/ss-pipeline/.github/workflows/on-push-labels.yml@main
+    permissions:
+      contents: read
+      issues: write
+    secrets: inherit
