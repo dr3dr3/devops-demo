@@ -1,6 +1,6 @@
 # Trigger workflows on issues events
 name: ON-ISSUE-LABELED
-run-name: Issue Labeled - ${{ github.event.label.name }}
+run-name: Issue Labeled ( ${{ github.event.label.name }} )
 
 on:
   issues:
