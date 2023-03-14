@@ -1,6 +1,6 @@
 # Trigger workflows on push to short-lived feature branch (SLFB)
-name: ON-PUSH-MAIN-BRANCH
-run-name: Push to MAIN by ${{ github.event_name }}
+name: ON-PUSH-MAIN
+run-name: Push to MAIN
 
 on:
   push:

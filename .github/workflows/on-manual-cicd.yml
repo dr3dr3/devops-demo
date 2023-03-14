@@ -1,6 +1,6 @@
 # Manually trigger build and deploy dispatch to Stage
 name: ON-MANUAL-CICD
-run-name: CI triggered by ${{ github.actor }} for target - ${{ inputs.target-ref }}
+run-name: CI triggered by ${{ github.actor }} (target is ${{ inputs.target-ref }})
 
 on:
   workflow_dispatch:
@@ -18,7 +18,7 @@ jobs:
     name: CI
     uses: dr3dr3/ss-pipeline/.github/workflows/continuous-integration.yml@main
     with: 
-      feature: 'none'
+      feature: 'Manually triggered build and release'
       target-ref: ${{ inputs.target-ref }}
     permissions:
       contents: write
