@@ -1,2 +1,4 @@
 # Reveal-MD 
 /reveal-md
+/node_modules
+package-lock.json
