@@ -11,11 +11,11 @@ jobs:
   # Continuous integration workflow in 'ss-pipeline' repo
   continuous-integration:
     name: CI
-    if: ${{ github.event.review.state == 'approved' }}
+    if: ${{ github.event.review.state == 'approved' && vars.CI_PATTERN == 'TBD_PR' }}
     uses: dr3dr3/ss-pipeline/.github/workflows/continuous-integration.yml@main
     with: 
-      ss-solution: 'reveal-md'
-      slfb: ${{ github.event.pull_request.head.ref }}
+      feature: ${{ github.event.pull_request.head.ref }}
+      target-ref: ${{ github.sha }}
     permissions:
       contents: write
       pull-requests: write

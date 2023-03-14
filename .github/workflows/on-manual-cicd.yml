@@ -1,6 +1,6 @@
 # Manually trigger build and deploy dispatch to Stage
 name: ON-MANUAL-CICD
-run-name: CICD workflow for Stage Environment triggered by ${{ github.actor }}
+run-name: CI triggered by ${{ github.actor }} for target - ${{ inputs.target-ref }}
 
 on:
   workflow_dispatch:
@@ -15,11 +15,11 @@ jobs:
 
   # Continuous integration workflow in 'ss-pipeline' repo
   continuous-integration:
-    name: STG
+    name: CI
     uses: dr3dr3/ss-pipeline/.github/workflows/continuous-integration.yml@main
     with: 
-      ss-solution: 'reveal-md'
-      slfb: 'main'
+      feature: 'none'
+      target-ref: ${{ inputs.target-ref }}
     permissions:
       contents: write
       pull-requests: write

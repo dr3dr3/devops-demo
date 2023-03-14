@@ -1,19 +1,24 @@
 # Trigger workflows on push to short-lived feature branch (SLFB)
 name: ON-PUSH-MAIN-BRANCH
-run-name: Push to MAIN branch
+run-name: Push to MAIN by ${{ github.event_name }}
 
 on:
   push:
     branches: [main]
 
-jobs: 
+jobs:
 
-  testing:
-    name: Test Trigger
-    runs-on: ubuntu-latest 
-    steps:
-      - name: Message
-        run: echo "### Test Passed :thumbsup:" >> $GITHUB_STEP_SUMMARY
-
-
-# if commit message contains "[ci]" then build and test and update PR 
+  # Continuous integration workflow in 'ss-pipeline' repo
+  continuous-integration:
+    name: CI
+    if: ${{  vars.CI_PATTERN == 'TBD_MAIN' }}
+    uses: dr3dr3/ss-pipeline/.github/workflows/continuous-integration.yml@main
+    with: 
+      feature: ${{ github.event.head_commit.message }}
+      target-ref: ${{ github.sha }}
+    permissions:
+      contents: write
+      pull-requests: write
+      pages: write
+      id-token: write
+    secrets: inherit
