@@ -1,6 +1,5 @@
-# Trigger workflows on issues events
-name: ON-ISSUE-LABELED
-run-name: Setup labels
+name: ON-PUSH-LABELS
+run-name: Setup labels in relevant repositories
 
 on:
   push:
@@ -8,15 +7,26 @@ on:
       - main
     paths:
       - .github/labels.yml
-      - .github/workflows/labels-in-repos.yml
+      - .github/workflows/on-push-labels.yml
 
-jobs: 
+  workflow_call:
 
-  # Build static site using Reveal-MD
-  labels:
-    name: Labels
-    uses: dr3dr3/ss-pipeline/.github/workflows/on-push-labels.yml@main
+jobs:
+  setup-labels:
+    name: Setup Labels
+    runs-on: ubuntu-latest
     permissions:
       contents: read
       issues: write
-    secrets: inherit
+    steps:
+
+      - name: Checkout Feature Branch
+        uses: actions/checkout@v3
+
+      - name: Action Label Syncer
+        uses: crazy-max/ghaction-github-labeler@v4
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}        
+          yaml-file: .github/labels.yml
+          skip-delete: false
+          dry-run: false
