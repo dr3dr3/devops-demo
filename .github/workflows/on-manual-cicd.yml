@@ -22,6 +22,7 @@ jobs:
       target-ref: ${{ inputs.target-ref }}
     permissions:
       contents: write
+      deployments: write
       pull-requests: write
       pages: write
       id-token: write
