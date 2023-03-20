@@ -11,7 +11,7 @@ jobs:
   # Continuous integration workflow in 'ss-pipeline' repo
   continuous-integration:
     name: CI
-    if: ${{  vars.CI_PATTERN == 'TBD_MAIN' }}
+    if: ${{ vars.CI_PATTERN == 'TBD_MAIN' }}
     uses: dr3dr3/ss-pipeline/.github/workflows/continuous-integration.yml@main
     with: 
       feature: ${{ github.event.head_commit.message }}
