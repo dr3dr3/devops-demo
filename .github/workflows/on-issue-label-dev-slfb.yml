@@ -1,4 +1,3 @@
-# Trigger workflows on issues events
 name: ON-ISSUE-LABELED
 run-name: Issue Labeled ( ${{ github.event.label.name }} )
 
@@ -8,7 +7,6 @@ on:
 
 jobs: 
 
-  # Build static site using Reveal-MD
   agile-dev:
     name: Agile Dev
     if: ${{ github.event.label.name == 'status-slfb' }}
@@ -16,5 +14,4 @@ jobs:
     permissions:
       contents: write
       issues: write
-      ####
     secrets: inherit
