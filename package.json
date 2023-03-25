@@ -25,8 +25,8 @@
     "scripts": {
         "setup": "./setup.sh",
         "start": "cd reveal-md && reveal-md . -w",
-        "lint": "npm run lint",
-        "test": "npm run test",
+        "lint": "npm run lint -workspace=reveal-md",
+        "test": "npm run test -workspace=reveal-md",
         "links": "npx linkinator 'reveal-md/_site/markdown/*.html' --formal JSON",
         "build": "cd reveal-md && reveal-md --static _site --template template.html --glob 'markdown/*.md'"
     }
