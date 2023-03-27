@@ -2,6 +2,5 @@
 title: Version Slide
 ---
 
-# Version 🚢
-Take #19
+# Version 😁
 
