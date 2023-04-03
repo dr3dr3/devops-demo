@@ -1,4 +1,3 @@
-# Trigger workflows on push to short-lived feature branch (SLFB)
 name: CI-TRUNK
 run-name: Trigger Continuous Improvement on PUSH to TRUNK (MAIN)
 
