@@ -15,7 +15,8 @@
     },
     "keywords": [
         "devops",
-        "reveal",
+        "reveal.js",
+        "reveal-md",
         "slides",
         "presentation"
     ],
@@ -24,7 +25,7 @@
         "start": "cd reveal-md && reveal-md . -w",
         "lint": "cd reveal-md && npm run lint",
         "test": "cd reveal-md && npm run test",
-        "links": "npx linkinator 'reveal-md/_site/markdown/*.html' --formal JSON",
+        "links": "npx linkinator 'reveal-md/_site/**.html' --formal JSON",
         "build": "cd reveal-md && reveal-md --static _site --static-dirs=assets --listing-template index.html --template template.html --glob 'markdown/*.md' --absolute-url 'https://www.andredreyer.com'"
     }
 }
