@@ -1,5 +1,6 @@
 {
-    "theme": "night",
+    "verticalSeparator": "^\n------\n",
+    "theme": "white",
     "highlightTheme": "stackoverflow-dark",
     "template": "template.html",
     "assets-dir": "assets",

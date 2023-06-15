@@ -22,10 +22,10 @@
     ],
     "scripts": {
         "setup": "./setup.sh",
-        "start": "cd reveal-md && reveal-md . -w",
+        "start": "rsync -avh slides reveal-md && rsync -avh slides-draft reveal-md && cd reveal-md && reveal-md . -w",
         "lint": "cd reveal-md && npm run lint",
         "test": "cd reveal-md && npm run test",
         "links": "npx linkinator 'reveal-md/_site/**.html' --formal JSON",
-        "build": "cd reveal-md && reveal-md --static _site --static-dirs=assets --listing-template index.html --template template.html --glob 'markdown/*.md' --absolute-url 'https://www.andredreyer.com'"
+        "build": "cd reveal-md && reveal-md --static _site --static-dirs=assets --listing-template index.html --template template.html --glob 'slides/*.md' --absolute-url 'https://www.andredreyer.com'"
     }
 }
