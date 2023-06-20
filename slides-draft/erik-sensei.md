@@ -25,3 +25,25 @@ Means to turn something simple into something complex.
 # Sensei Jez Humble
 
 ---
+
+# Sensei Dr Steven Spear
+
+> "It is ignorance that is the mother of all problems, and the only thing that can overcome it is learning." (Chapter #8 - The Unicorn Project)
+
+---
+
+# Sensei W. Edwards Deming
+
+> "A bad system will beat a good person every time." (Chapter #8 - The Unicorn Project)
+
+---
+
+# Sensei John Allspaw
+
+> "Every incident is a learning opportunity, an unplanned investment that was made without our consent." (Chapter #8 - The Unicorn Project)
+
+---
+
+# Sensei Paul O'Neill
+
+> "Everyone must be responsbile for thier own safety and the safety of their teammatess. If you see something that could hurt someone, you must fix it as quickly as possible."

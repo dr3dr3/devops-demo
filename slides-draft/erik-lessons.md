@@ -38,7 +38,7 @@ The Fifth Ideal - Customer Focus
 
 #### Improvement to Daily Work
 
-> "..."
+> "It is the dynamic that allows us to change and improve how we work, informed by learning" - Erik (Chapter #8 - The Unicorn Project)
 
 ----
 
@@ -54,7 +54,7 @@ The Fifth Ideal - Customer Focus
 
 ---
 
-# Simplicity and Locality
+# Locality and Simplicity
 
 ----
 
@@ -103,31 +103,37 @@ The Fifth Ideal - Customer Focus
 
 Aka "Technical Debt"
 
-----
+------
 
 > "Without this ruthless focus, every system degrades over time, increasingly buried under a tundra of technical debt."
 
-----
+------
 
 > "I've started calling all of these things 'complexity debt' because they're not just technical issues - they are business issues. And it's always a choice. You can choose to build new features or you can choose to pay down complexity debt."
 
-----
+------
 
-> "When a fool spends all their time on features, the inevitable outsome is that even easy tasks become difficult and take longer to execute."
+> "When a fool spends all their time on features, the inevitable outcome is that even easy tasks become difficult and take longer to execute."
 
-----
+------
 
 > "And no matter how hard you try or how many people you have, it eventually collapses under its own weight, forcing you to start over from scratch."
+
+------
+
+> "Every tech giant has nearly been killed by technical debt... they became so encumbered by technical debt they could no longer deliver what their customers demanded" 
+
+Chapter #8 - The Unicorn Project
 
 ---
 
 # Focus, Flow, and Joy
 
-----
+------
 
 > "Do we blindly work on small peives of the whole, only seeing hte outcomes of our work during a deployment when everything blows up, leading to firefighting, punishment, and burn-out?" (Chapter #7 - The Unicorn Project)
 
-----
+------
 
 > "Or do we work in small batches, ideally single-peice flow, getting fast and continual feedback on our work?"
 
@@ -139,10 +145,40 @@ Aka "Technical Debt"
 
 # Improvement to Daily Work
 
+------
+
+> "Picture this scenario: You are in an organization where everyone is making decisions, solving important problems every day, and teaching others what they've learned. Your adversary is an organization where only the top leaders make decisions. Who will win? Your victory is inevitable." (Chapter #8 - The Unicorn Project)
+
+------
+
+> "This is the opposite of the Third Ideal, where instead of improving the processes we work within, we blindly follow them. And now the process has fully imprisoned us, sucking out all teh joy from our daily work, pushing us ever further away from the second ideal." (Chapter #10 - The Unicorn Project)
+
 ---
 
 # Psychological Safety
 
+------
+
+"No one will take risks, experiment, or innovate in a culture of fear, where people are afraid to tell the boss bad news." (Chapter #8 - The Unicorn Project)
+
+------
+
+"Researchers at Google spent years on Project Oxygen and found that psychological safety was one of the most important factors of great teams: where there was confidence that the team would not embarras, reject, or punish someone for speaking up." (Chapter #8 - The Unicorn Project)
+
 ---
 
 # Customer Focus
+
+---
+
+# Leader's Role
+
+> "For the leader, it no longer means directing and controlling, but guiding, enabling, and removing obstacles" (Chapter #8 - The Unicorn Project)
+
+------
+
+> "That's not servant leadership, it's transformational leadership"
+
+> "It requires understanding hte vision of hte organization, the intellectual stimulation to question the basic assumptions of how work is performed, inspirational communication, personal recognition, and supportive leadership."
+
+Chapter #8 - The Unicorn Project
