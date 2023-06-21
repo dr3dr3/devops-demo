@@ -16,6 +16,7 @@ jobs:
     with: 
       feature: ${{ github.event.pull_request.head.ref }}
       target-ref: ${{ github.sha }}
+      solution: 'revealmd'
     permissions:
       contents: write
       pull-requests: write

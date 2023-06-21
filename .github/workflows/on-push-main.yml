@@ -1,5 +1,5 @@
 name: CI-TRUNK
-run-name: Trigger Continuous Improvement on PUSH to TRUNK (MAIN)
+run-name: Continuous Integration on PUSH to Trunk (MAIN)
 
 on:
   push:
