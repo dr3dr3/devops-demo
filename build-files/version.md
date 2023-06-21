@@ -2,7 +2,7 @@
 title: Version Slide
 ---
 
-# 😻
+# 🥶
 
 ## Version
 
