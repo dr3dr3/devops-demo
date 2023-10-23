@@ -1,4 +1,4 @@
-name: CI-TRUNK
+name: ON-PUSH-MAIN
 run-name: Continuous Integration on PUSH to Trunk (MAIN)
 
 on:
