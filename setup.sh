@@ -31,8 +31,8 @@ rsync -avh build-files/version.md reveal-md/markdown/version.md
 echo "=====> Favicon"
 rsync -avh build-files/favicon.ico reveal-md
 
-#echo "=====> Reveal.JS config copied to reveal-md"
-#rsync -avh build-files/reveal.json reveal-md
+echo "=====> Reveal.JS config copied to reveal-md"
+rsync -avh build-files/reveal.json reveal-md
 
-#echo "=====> Reveal-MD config copied to reveal-md"
-#rsync -avh build-files/reveal-md.json reveal-md
+echo "=====> Reveal-MD config copied to reveal-md"
+rsync -avh build-files/reveal-md.json reveal-md
