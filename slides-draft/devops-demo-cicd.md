@@ -1,6 +1,6 @@
 ---
 title: DevOps Demo - CI/CD Flow
-theme: white
+theme: night
 ---
 
 <!-- .slide: id="title-slide" -->
@@ -497,7 +497,7 @@ theme: white
 * Same for everyone
 * Note: Still WIP
 
-Notes: Some functionality that if use SLFB then it creates a codespace
+Note: Some functionality that if use SLFB then it creates a codespace
 
 ------
 
@@ -525,7 +525,7 @@ Notes: Some functionality that if use SLFB then it creates a codespace
 # Build
 
 * Built within dev environment
-* npm run build
+* `npm run build`
 
 ---
 
@@ -536,8 +536,8 @@ Notes: Some functionality that if use SLFB then it creates a codespace
 # Test
 
 * Tested within dev environment
-* npm run lint
-* npm run test
+* `npm run lint`
+* `npm run test`
 
 Note: This just runs the standard tests that comes with Reveal-MD
 
@@ -548,6 +548,8 @@ Note: This just runs the standard tests that comes with Reveal-MD
 [🗺️](#/diagram)
 
 # SLFB
+
+Optional
 
 Once coding is completed locally...
 
@@ -567,7 +569,7 @@ Once branch created...
 
 * Push commits to SLFB
 * Triggers continuous integration workflow
-* on-push-slfb
+* `on-pr-approved`
 * To deploy to Sandbox environment
 
 Note: Sandbox is an emphemeral environment just for the SLFB branch
@@ -581,7 +583,7 @@ Note: Sandbox is an emphemeral environment just for the SLFB branch
 # Build
 
 * Build package for revevant solution
-* Example: Reveal-MD)build to _site folder (tar.gz)
+* Output to _site folder (tar.gz)
 
 ---
 
