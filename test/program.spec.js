@@ -10,7 +10,7 @@ const inspect_brk = process.env.VSCODE_DEBUGGING === 'true' ? '--inspect-brk' : 
 const reveal_md = `node ${inspect_brk} ${path.join(__dirname, '../bin', 'reveal-md.js')}`;
 
 test('should print version', async () => {
-  const { stdout } = await exec(`${reveal_md} --version`);
+  const { stdout } = await exec(`npx ${reveal_md} --version`);
   assert.equal(stdout.trim(), pkg.version);
 });
 
