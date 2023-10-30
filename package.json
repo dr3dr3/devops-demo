@@ -21,12 +21,12 @@
         "presentation"
     ],
     "scripts": {
-        "start": "npx reveal-md . --watch --listing-template listing.html --template template.html --glob 'slides*/*.md' --absolute-url 'http://www.localhost.com'",
+        "start": "npx reveal-md . --watch --listing-template listing.html --template template.html --glob 'slides*/*.md' --absolute-url 'http://localhost'",
         "lint": "eslint lib test",
         "test": "bron test/*.spec.js",
         "links": "npx linkinator '_site/**.html' --format JSON",
         "format": "prettier --write lib/**/*.js bin/*.js test/*.js *.md",
-        "build": "npx reveal-md --static _site --static-dirs=assets --listing-template listing.html --template template.html --glob 'slides/*.md' --absolute-url 'http://www.localhost.com'"
+        "build": "npx reveal-md --static _site --static-dirs=assets --listing-template listing.html --template template.html --glob 'slides/*.md' --absolute-url 'http://localhost'"
     },
     "dependencies": {
         "linkinator": "^6.0.0",
