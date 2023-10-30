@@ -16,13 +16,13 @@ test('should print version', async () => {
 
 test('should provide help', async () => {
   const help = await fs.readFile(path.join(process.cwd(), 'bin/help.txt'));
-  const { stdout } = await exec(`${reveal_md} --help`);
+  const { stdout } = await exec(`npx ${reveal_md} --help`);
   assert.equal(stdout.trim(), help.toString().trim());
 });
 
 test('should exit on error', async () => {
   await assert.rejects(
-    () => exec(`${reveal_md} no_such_file.md`),
+    () => exec(`npx ${reveal_md} no_such_file.md`),
     /\[Error: ENOENT: no such file or directory, stat '.*no_such_file.md'\]/
   );
 });
