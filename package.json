@@ -21,14 +21,24 @@
         "presentation"
     ],
     "scripts": {
-        "setup": "./setup.sh",
-        "start": "rsync -avh slides reveal-md && rsync -avh slides-draft/* reveal-md/slides && cd reveal-md && reveal-md . --watch --listing-template listing.html --template template.html --glob 'slides/*.md' --absolute-url 'https://www.andredreyer.com'",
-        "lint": "cd reveal-md && npm run lint",
-        "test": "cd reveal-md && npm run test",
-        "links": "npx linkinator 'reveal-md/_site/**.html' --format JSON",
-        "build": "cd reveal-md && reveal-md --static _site --static-dirs=assets --listing-template listing.html --template template.html --glob 'slides/*.md' --absolute-url 'https://www.andredreyer.com'"
+        "start": "npx reveal-md . --watch --listing-template listing.html --template template.html --glob 'slides*/*.md' --absolute-url 'http://www.locahost.com'",
+        "lint": "eslint lib test",
+        "test": "bron test/*.spec.js",
+        "links": "npx linkinator '_site/**.html' --format JSON",
+        "format": "prettier --write lib/**/*.js bin/*.js test/*.js *.md",
+        "build": "npx reveal-md --static _site --static-dirs=assets --listing-template listing.html --template template.html --glob 'slides/*.md' --absolute-url 'http://www.locahost.com'"
     },
     "dependencies": {
-        "linkinator": "^6.0.0"
-    }
+        "linkinator": "^6.0.0",
+        "reveal-md": "^5.5.2"
+    },
+    "devDependencies": {
+        "bron": "1.1.1",
+        "eslint": "8.52.0",
+        "eslint-config-prettier": "9.0.0",
+        "eslint-plugin-import": "2.29.0",
+        "eslint-plugin-prettier": "5.0.1",
+        "prettier": "3.0.3",
+        "release-it": "16.2.1"
+      }
 }
