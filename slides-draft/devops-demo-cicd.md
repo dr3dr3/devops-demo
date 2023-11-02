@@ -1,6 +1,5 @@
 ---
 title: DevOps Demo - CI/CD Flow
-theme: white
 ---
 
 <!-- .slide: id="title-slide" -->

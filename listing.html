@@ -3,17 +3,33 @@
   <head>
     <meta charset="utf-8" />
     <title>{{pageTitle}}</title>
+    <link rel="stylesheet" href="{{{themeUrl}}}" id="theme" />    
+    <style>
+      body {
+        text-align: center;
+        background-color: var(--r-background-color); }
+      h1 {
+        padding: 100px; }
+    </style>    
   </head>
 
   <body>
-    <ul>
-      {{#files}}
-      <li>
-        <a href="{{filePath}}" title="{{title}}">
-          {{#title}}{{.}}{{/title}}
-        </a>
-      </li>
-      {{/files}}
-    </ul>
+    <div class="reveal">
+      <div class="slides">
+
+      <h1>Testing</h1>
+
+      <ul>
+        {{#files}}
+        <li>
+          <a href="{{filePath}}" title="{{title}}">
+            {{#title}}{{.}}{{/title}}
+          </a>
+        </li>
+        {{/files}}
+      </ul>
+
+      </div>
+    </div>
   </body>
 </html>
