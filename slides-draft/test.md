@@ -2,13 +2,41 @@
 title: Test
 ---
 
-<!-- .slide: id="title-slide" -->
+<!-- .slide: id="title-slide" data-background-color="#e1e1e1" data-background-transition="zoom" -->
 
-# Test 6
+# WOW <!-- .element: class="r-fit-text" -->
 
 ---
 
-<!-- .slide: id="diagram" -->
+> Blockquotes are very handy in email to emulate reply text.
+
+***
+
+> This line is part of the same quote.
+
+---
+
+![Test SVG](../assets/test.svg) <!-- .element: class="r-stretch" height="600px"-->
+
+---
+
+<!-- .slide: id="two" data-background-color="#fff" data-background-transition="zoom" -->
+
+Blah blah blah <!-- .element: class="fragment" data-fragment-index="1" -->
+
+[this is a link](https://www.google.com) <!-- .element: class="fragment" data-fragment-index="2" -->
+
+blah blah blah <!-- .element: class="fragment" data-fragment-index="3" -->
+
+---
+
+<!-- .slide: id="four" data-background-transition="zoom" -->
+
+# Heading
+
+---
+
+<!-- .slide: id="diagram" data-background-color="#fff" -->
 
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1000" height="600" stroke="var(--r-main-color)" stroke-linecap="round" stroke-linejoin="round" fill="#fff" fill-rule="evenodd" font-family="Roboto" font-size="14" text-anchor="middle">
     <defs>
@@ -23,7 +51,7 @@ title: Test
     </defs>
     <g transform="matrix(0 -1 1 0 364.5 524.5)">
         <path d="M189.3753.0498Q0 3.4278 0 235" class="D E" stroke-width="2" fill="none"/>
-        <use transform="matrix(.01230219 1.24993946 -1.24993946 .01230219 193.08085821 -194.99055591)" x="156" xlink:href="#A" class="B" fill="var(--r-main-color)"/>
+        <use transform="matrix(.01230219 1.24993946 -1.24993946 .01230219 193.08085821 -194.99055591)" x="156" xlink:href="#A" class="B" fill="var(--r-heading-color)"/>
     </g>
     <g transform="matrix(0 1 -1 0 364.5 109.5)">
         <path d="M130 0Q3.2229 0 .0798 109.3757" class="D E" stroke-width="2" fill="none"/>

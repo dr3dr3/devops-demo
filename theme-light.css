@@ -4,43 +4,56 @@
  * This theme is Copyright (C) 2012 Owen Versteeg, https://github.com/StereotypicalApps. It is MIT licensed.
  * reveal.js is Copyright (C) 2011-2012 Hakim El Hattab, http://hakim.se
  */
- @import url(https://fonts.googleapis.com/css?family=Acme:400);
- @import url(https://fonts.googleapis.com/css?family=Roboto:300,300italic,700);
- section.has-dark-background, section.has-dark-background h1, section.has-dark-background h2, section.has-dark-background h3, section.has-dark-background h4, section.has-dark-background h5, section.has-dark-background h6 {
-   color: #fff;
- }
- 
+ @import url(https://fonts.googleapis.com/css?family=Acme:400,700);
+ @import url(https://fonts.googleapis.com/css?family=Roboto:300,300italic,700,900);
+
+
 /*********************************************
  * GLOBAL STYLES
  *********************************************/
 :root {
-	--r-background-color: #fff;
+	--r-background-color: #e1ddd6;
 	--r-main-font: Roboto, Helvetica, sans-serif;
 	--r-main-font-size: 36px;
-	--r-main-color: #555;
+	--r-main-color: #4b4945;
 	--r-block-margin: 20px;
 	--r-heading-margin: 0 0 20px 0;
 	--r-heading-font: Acme, Helvetica, sans-serif;
-	--r-heading-color: #A7408B;
+	--r-heading-color: #344a86;
+	--r-heading-alt-color: #407794;
 	--r-heading-line-height: 1.2;
 	--r-heading-letter-spacing: normal;
 	--r-heading-text-transform: none;
-	--r-heading-text-shadow: none;
-	--r-heading-font-weight: 400;
-	--r-heading1-text-shadow: none;
+	--r-heading-font-weight: 700;
+	--r-heading1-text-shadow: #fff 2px 2px 1px;
 	--r-heading1-size: 2.5em;
 	--r-heading2-size: 1.6em;
 	--r-heading3-size: 1.3em;
 	--r-heading4-size: 1em;
-	--r-strong-color: #ff8120;
+	--r-heading5-size: 0.5em;
+	--r-heading6-size: 0.4em;
+	--r-strong-color: #c2964b;
 	--r-code-font: monospace;
-	--r-link-color: #0277BD;
-	--r-link-color-dark: #1a53a1;
-	--r-link-color-hover: #6ca0e8;
-	--r-selection-background-color: #98bdef;
-	--r-selection-color: #69B978;
+	--r-link-color: #407794;
+	--r-link-color-dark: #c2964b;
+	--r-link-color-hover: #c2964b;
+	--r-selection-background-color: #c2964b;
+	--r-selection-color: #4b4945;
   }
   
+  section.has-dark-background {
+  color: var(--r-background-color);
+  }
+
+  section.has-dark-background h1, 
+  section.has-dark-background h2, 
+  section.has-dark-background h3, 
+  section.has-dark-background h4, 
+  section.has-dark-background h5, 
+  section.has-dark-background h6 {
+    color: var(--r-strong-color);
+  }
+
   .reveal-viewport {
 	background: #fff;
 	background-color: var(--r-background-color);
@@ -87,7 +100,6 @@
 	line-height: var(--r-heading-line-height);
 	letter-spacing: var(--r-heading-letter-spacing);
 	text-transform: var(--r-heading-text-transform);
-	text-shadow: var(--r-heading-text-shadow);
 	word-wrap: break-word;
   }
   
@@ -107,8 +119,21 @@
 	font-size: var(--r-heading4-size);
   }
   
+  .reveal h5 {
+    font-size: var(--r-heading5-size);
+    font-family: var(--r-main-font);
+    font-weight: 900;
+    }
+    
+  .reveal h6 {
+    color: var(--r-main-color);
+    font-size: var(--r-heading6-size);
+    font-family: var(--r-main-font);
+    font-weight: 300;
+  }
+      
   .reveal h1 {
-	text-shadow: var(--r-heading1-text-shadow);
+    text-shadow: var(--r-heading1-text-shadow);
   }
   
   /*********************************************
@@ -314,6 +339,12 @@
 	border: none;
   }
   
+  .reveal a:visited {
+    color: var(--r-link-color-hover);
+    text-shadow: none;
+    border: none;
+  }
+
   .reveal .roll span:after {
 	color: #fff;
 	background: var(--r-link-color-dark);
@@ -349,6 +380,7 @@
   .reveal .progress {
 	background: rgba(0, 0, 0, 0.2);
 	color: var(--r-link-color);
+  height:0.5%;
   }
   
   /*********************************************

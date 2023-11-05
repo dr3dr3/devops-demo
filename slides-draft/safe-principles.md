@@ -10,33 +10,56 @@ title: Scaled Agile Framework (SAFe) - Principles
 
 <!-- .slide: id="economic" -->
 
-### Take an economic view
+# 1
+
+## Take an economic view
 
 ------
 
-Deliver early & often
+**Deliver early & often**
+
+Incremental development. Deliver value to the customers much earlier and accumlate additional value over time. 
 
 ------
 
-Lean budgets and guardrails
+**Apply a comprehensive economic framework**
+
+A set of decision guidelines that align everyone with the financial objectives of a portfolio and inform the decision-making process.
 
 ------
 
-Understand economic trade-offs
+**Economic Framework**
 
-------
-
-Leverage suppliers
-
-------
-
-Empower local decision-making
+1. Lean budgets and guardrails
+2. Understand economic trade-offs
+3. Leverage suppliers
+4. Sequence jobs for maximum benefit
 
 ---
 
 <!-- .slide: id="systems-thinking" -->
 
-### Apply systems thinking
+# 2
+
+## Apply systems thinking
+
+------
+
+**The Solution is a System**
+
+------
+
+**Enterprise is a System too**
+
+------
+
+**Understand and Optimize the Full VS**
+
+------
+
+> "Everyone is already doing their best; the probelms are with the system... only management can change the system."
+
+W. Edwards Deming
 
 ---
 

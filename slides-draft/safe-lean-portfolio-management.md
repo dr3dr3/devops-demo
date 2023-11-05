@@ -2,12 +2,6 @@
 title: Scaled Agile Framework (SAFe) - Lean Portfolio Management
 ---
 
-<!-- .slide: id="x" data-background="#ccc" -->
-
-# X
-
----
-
 <!-- .slide: id="title-slide" -->
 
 # Lean Portfolio Management
@@ -15,6 +9,24 @@ title: Scaled Agile Framework (SAFe) - Lean Portfolio Management
 ------
 
 Essential to achieving Business Agility
+
+---
+
+<!-- .slide: id="credits" -->
+
+## Scaled Agile Framework
+
+Scaled Agile, Inc is a protected Brand. These slides / presentations are neither endorsed by nor affiliated.. This is not official training or materials. 
+
+##### Visit: [scaledagile.com](https://scaledagile.com/)
+
+------
+
+## Purpose Here
+
+**This is simply my way of learning.** 
+
+The purpose of these presentations are to help me apply these concepts and practices, and help teach/coach others. 
 
 ---
 
@@ -59,6 +71,16 @@ Projects governed by phase gates. Waterfall milestones. Progress mesured by task
 
 Value delivery in silos is inhibited by hand-offs and delays. Political boundares can prevent cooperation across silos. Communication across silos is difficult.
 
+------
+
+## Project Cost Accounting
+
+**Disadvantages**
+
+* Utilization-based planning
+* Complex budgeting process
+* Cuts acrss multiple cost-centers
+
 ---
 
 ## Lean-Agile Approach
@@ -77,7 +99,7 @@ Value stream budgets adjusted dynamically through paricipatory budgeting.
 
 ------
 
-Strategic demand managed by portfolio Kanban. Decentralized intake by value streams and ARTs.
+Strategic demand managed by Portfolio Kanban. Decentralized intake by value streams and ARTs.
 
 ------
 
@@ -92,11 +114,20 @@ Products and services governed by self-managing ARTs. Objective measures and mil
 Customers do not buy Features or Capabilities. Rather, they buy whole product Solutions that deliver desired outcomes, which make Solutions one 
 of the central concepts in SAFe
 
+------
+
+## Lean-Agile Budgeting
+
+**Advantages**
+
+* Effective financial controls with less overhead
+* Adjusted over time to take advantage of opportunities
+
 ---
 
 <!-- .slide: id="strategy-investment" -->
 
-1️⃣
+# 1
 
 ## Strategy & Investment Funding
 
@@ -112,7 +143,7 @@ Ensures the entire portfolio is aligned and funded to create and maintain the so
 
 ------
 
-## Responsibility
+## Responsibilities
 
 * Connect the portfolio to enterprise strategy
 * Maintain the portfolio vision and roadmap
@@ -139,9 +170,19 @@ Small set of business objectives that connect a portfolio to the enterprise stra
 
 ## Method: OKRs
 
+Measure **portfolio performance** relative to **strategic themes**.
+
 * Objectives are inspirational
 * Objectives are clear and measurable
 * Objectives have two to five key results
+
+------
+
+## Portfolio KPIs
+
+Portfolio KPIs measure how a **value stream** performs against its forecasted **business outcomes**. 
+
+[See More Here](#/performance)
 
 ------
 
@@ -195,16 +236,24 @@ Aspirational, yet realistic and achievable. Motivational enough to engage others
 
 ## Portfolio Canvas
 
-Business Model Canvas (BMC) with addition of value streams, solutions, budgets, OKRs.
+**Business Model Canvas (BMC)** with additions of:
+
+* Value Stream
+* Solutions
+* Lean Budget
+* KPIs / OKRs
+
+Plus BMC parts: customer segment, channels, customer relationships, key partners, key activities, key resources, cost structure and revenue streams.
 
 ------
 
 ## Evaluate Alternatives
 
 1. Current State Portfolio Canvas (PC)
-2. Divergent thinking ➡️ Multiple potential PCs
-3. Convergent thinking ➡️ Future State PC
-4. Identify Epics
+1. SWOT and TOWS analysis
+1. Divergent thinking ➡️ Multiple potential PCs
+1. Convergent thinking ➡️ Future State PC
+1. Identify Epics
 
 ------
 
@@ -214,6 +263,8 @@ Business Model Canvas (BMC) with addition of value streams, solutions, budgets, 
 * **Weakness** (Internal Origin)
 * **Opportunities** (External Origin)
 * **Threats** (External Origin)
+
+Opportunities identify strategic options to create a better future state.
 
 ------
 
@@ -232,7 +283,15 @@ Funding value streams instead of projects allows the portfolio to plan, invest, 
 
 ------
 
+## Advantage of Funding by VS
+
+It is easier to forecast expenses for a Program Increment (PI).
+
+------
+
 ## Lean Budget Guardrails
+
+Purpose is to describe budgetary, governance, and spending practices of the portfolio.
 
 * Guide investments by horizons
 * Apply capacity allocation 
@@ -271,11 +330,23 @@ Funding value streams instead of projects allows the portfolio to plan, invest, 
 * Iteration Plan: 2 weeks
 * Daily Plan: 1 day
 
+------
+
+## Portfolio Roadmap
+
+Purpose is to indicate the interaction across value streams.
+
+------
+
+## Solution Roadmap
+
+* Coordinated within a value stream
+
 ---
 
 <!-- .slide: id="portfolio-operations" -->
 
-2️⃣
+# 2
 
 ## Agile Portfolio Operations
 
@@ -289,6 +360,13 @@ Coordinates and supports decentralized program execution and foster operational 
 * Lean-Agile Centre-of-Excellence (LACE)
 * Release Train Engineers (RTE)
 * Scrum Masters / Team Coaches CoP
+
+
+------
+
+## Responsibilities
+
+* Support **program** execution
 
 ------
 
@@ -353,7 +431,7 @@ For funding of LACE roles, tools, coaching
 
 <!-- .slide: id="lean-governance" -->
 
-3️⃣
+# 3
 
 ## Lean Governance
 
@@ -366,6 +444,12 @@ Oversees and manages spending, audit, compliance, forecasting expenses, and meas
 * Value Managemetn Office (VMO)
 * Business Owners
 * Enterprise Architects
+
+------
+
+## Responsibilities
+
+* TBA
 
 ------
 
@@ -472,6 +556,7 @@ link to tool?
 
 * Focus on advancing the Portfolio Vision
 * Continuous strategy, delivery, and budget alignment
+* Investment guidance with decentralized decisions
 * Done at least one month before next PI
 
 ------
@@ -489,6 +574,7 @@ link to tool?
 
 ## Portfolio Sync
 
+* Monthly
 * Focused on portfolio operations
 * Visibility on how portfolio is progressing
 * Typically held weekly to monthly
@@ -578,7 +664,28 @@ Proposed Solution Initiatives (PSI)
 
 Validate **ongoing** compliance with relevant standards and regulation (as opposed to at the end). 
 
+Build solutions and compliance **incrementally**.
+
 ---
+
+## Portfolio Flow
+
+* Kanban is a visual tool monitor/manage workflow
+* WIP limits promote faster flow
+* Epics are **pulled** across the Kanban board
+* **Pulled** as WIP limits and other policies permit
+
+------
+
+## Value of Portfolio Flow
+
+* Improve time-to-market
+* Resolve systemic overload
+* Avoid delayed ROI and burnout
+* Faster customer feedback
+* Validate MVPs before investing in full
+
+------
 
 ## Portfolio Kanban
 
@@ -592,15 +699,6 @@ Validate **ongoing** compliance with relevant standards and regulation (as oppos
 
 ------
 
-## Portfolio Flow
-
-* Kanban is a visual tool monitor/manage workflow
-* WIP limits promote faster flow
-* Epics are **pulled** across the Kanban board
-* **Pulled** as WIP limits and other policies permit
-
-------
-
 ## Portfolio Kanban Benefits
 
 * Makes the largest business and technical initiatives visible
@@ -608,16 +706,6 @@ Validate **ongoing** compliance with relevant standards and regulation (as oppos
 * Brings structure to Epic analysis and no / no-go decisions
 * Helps drive collaboration among key stakeholders
 * Transparency in evaluating the outcome hypothesis
-
-------
-
-## Value of Portfolio Flow
-
-* Improve time-to-market
-* Resolve systemic overload
-* Avoid delayed ROI and burnout
-* Faster customer feedback
-* Validate MVPs before investing in full
 
 ------
 
@@ -667,6 +755,7 @@ Pull highest priority Epic once approved by LPM
 * Build and evaluate MVP
 * Pivot or persevere decision made
 * Pulled by Teams
+* Reserve capacity (if persevere)
 
 Pull when ART capacity and budget available
 
@@ -737,7 +826,9 @@ Directly deliver business value
 
 **Enabler Epics** 
 
-Support the Architectural Runway and future business functionality
+Support the Architectural Runway and future business functionality.
+
+Consider potential of increating risk by sequencing Epics incorrectly.
 
 ------
 
@@ -902,12 +993,6 @@ Implement the Epic with the **highest WSFJ first**.
 
 ---
 
-## Implementation Roadmap
-
-**Lean Portfolio Management**
-
----
-
 ## Epics
 
 **Epics are not Projects**
@@ -965,3 +1050,257 @@ Implementation typically follows phase-gated, sequential (waterfall) process.
 ------
 
 After business case is approved, up-front commitment is made to the entire project scope.
+
+---
+
+<!-- .slide: id="performance" -->
+
+## Portfolio Performance
+
+Includes **value stream KPIs** 
+
+and a broader set of **portfolio metrics**.
+
+------
+
+## 1. Employee Engagement
+
+Improved employee satisfaction. Lower turnover.
+
+* Employee survey
+* HR statistics.
+
+------
+
+## 2. Customer Satisfaction
+
+Improved net promoter score (NPS)
+
+* NPS Survey
+
+------
+
+## 3. Productivity
+
+Reduced avereage feature cycle time
+
+* Feature cycle time
+
+------
+
+## 4. Relentless Improvement
+
+Measureable improvements in team, program, and portfolio performance. 
+
+------
+
+## 5. Time-to-Market (TTM)
+
+More frequent releases.
+
+* Deployment frequency
+
+------
+
+## 6. Quality
+
+Reduced defect counts and support call volumes.
+
+* Defect data
+* Support call volumes
+
+------
+
+## 7. Partner Health
+
+Improved ecosystem relationships
+
+* Partner and vendor surveys
+
+------
+
+## 8. Alignment
+
+Improved progress against key results for strategic themes
+
+* OKRs
+
+---
+
+## Implementation Roadmap
+
+**Lean Portfolio Management**
+
+------
+
+## 1. Align
+
+* Gain executive buy-in
+* Agree on portfolio definition
+* Establish the LPM team
+* LPM kick-off event
+* Develop LPM implementation plan
+* Schedule LPM events
+* Communicate LPM change vision
+
+------
+
+## 2. Organize
+
+* Run the VS & ART Identification Workshop
+* Take action from VSAIW
+
+------
+
+## 3 Strategize
+
+* Identify strategic themes
+* Define the portfolio vision
+* Establish lean budgets and guardrails
+
+------
+
+## 4. Operate
+
+* Establish and evolve the portfolio kanban
+* Facilitate LPM events
+* Prepare VS participants for LPM implementation
+
+------
+
+## 5. Govern
+
+* Establish portfolio and VS metrics
+* Explore: Compliance
+* Explore: Software capitalization
+* Explore: Agile contracting
+* Explore: Tech Business Mgmt (TBM)
+
+------
+
+## 6. Measure & Grow
+
+* Evaluate progress towards **business agility**
+* Determine improvement actions.
+* Run assessments
+* Take necessary steps to improve
+
+---
+
+## Measure & Grow
+
+------
+
+## Business Agility
+
+The goal of Business Agility is clear: quickly respond to **market changes** and **emerging opportunities** with innovative, digitally-enabled business solutions.
+
+------
+
+## Three Measurement Domains
+
+1. Outcomes
+1. Flow
+1. Competency
+
+Applicable at every level of an organisation.
+
+(Portfolio, Solution, ART, Agile Team)
+
+------
+
+![SAFe - Measure and Grow](../assets/safe-measure-grow.svg) <!-- .element: class="r-stretch" height="600px"-->
+
+------
+
+## Flow Metrics
+
+* Flow Distribution
+* Flow Velocity
+* Flow Time
+* Flow Load
+* Flow Efficiency
+* Flow Predictability
+
+------
+
+## Flow Distribution
+
+Proportion of work items by type in a system
+
+Example: Business vs Enabler epics
+
+------
+
+## Flow Velocity
+
+Number of items completed in a given timeframe
+
+Also known as the system's throughput
+
+------
+
+## Flow Time
+
+Total time elapsed for all steps in a workflow
+
+Measure fo efficiency of the entire system
+
+Example: Code commit to deployment
+
+------
+
+## Flow Load
+
+How many items are currently in the system
+
+Often a leading indicator of excess work-in-progress
+
+Measuring and reducing flow load is of critical importance
+
+------
+
+## Cumulative Flow Diagram 
+
+Is common tool to visualize **flow load** over time. Shows rate at which items are accepted into the work queue (arrival curve) and the rate at which they are completed (departure curve). At a point in time, flow load is the vertical distance between curves.
+
+------
+
+## Flow Efficiency
+
+How much of the overall flow time is value-added work vs waiting between steps
+
+Equals: **Total Active Time / Flow Time** (Active + Wait Time)
+
+------
+
+## Flow Predictability
+
+How well teams, ARTs, and Solution Trains can plan and meet their PI objectives.
+
+**Planned value achieved / Actual value achieved**
+
+---
+
+## LPM Events
+
+------
+
+## Strategic Portfolio Review
+
+* Cadence: TBA
+
+------
+
+### Portfolio Sync
+
+* Cadence: TBA
+* Visiblity into portfolio progress towards objectives
+
+------
+
+### Participaotory Budgeting
+
+* Cadence: Twice per year
+
+------
