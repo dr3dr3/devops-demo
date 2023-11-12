@@ -14,6 +14,8 @@
 :root {
 	--r-background-color: #e1ddd6;
 	--r-background-alt-color: #407794;
+  --r-diagram-fill-color: #fff;
+  --r-diagram-stroke-color: #4b4945;
 	--r-main-font: Roboto, Helvetica, sans-serif;
 	--r-main-font-size: 36px;
 	--r-main-color: #4b4945;
@@ -35,8 +37,8 @@
 	--r-heading6-size: 0.4em;
 	--r-strong-color: #c2964b;
 	--r-code-font: monospace;
-	--r-link-color: #407794;
-	--r-link-color-dark: #c2964b;
+	--r-link-color: #4b4945;
+	--r-link-color-dark: #4b4945;
 	--r-link-color-hover: #c2964b;
 	--r-selection-background-color: #c2964b;
 	--r-selection-color: #4b4945;
@@ -222,7 +224,7 @@
 	position: relative;
 	width: 70%;
 	margin: var(--r-block-margin) auto;
-	padding: 5px;
+	padding: 10px;
 	font-style: italic;
 	background: rgba(255, 255, 255, 0.05);
 	box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.2);
@@ -335,19 +337,22 @@
   .reveal a {
 	color: var(--r-link-color);
 	text-decoration: none;
-	transition: color 0.15s ease;
+  text-shadow: 0px 0px 2px #fff;
+	transition: color 0.1s ease;
   }
   
   .reveal a:hover {
-	color: var(--r-link-color-hover);
-	text-shadow: none;
+  color: var(--r-link-color);
+  text-decoration: none;
+  text-shadow: 0px 0px 2px var(--r-link-color-hover);
 	border: none;
   }
   
   .reveal a:visited {
-    color: var(--r-link-color-hover);
-    text-shadow: none;
-    border: none;
+  color: var(--r-link-color);
+  text-decoration: none;
+  text-shadow: 1px 1px 2px var(--r-link-color-hover);
+  border: none;
   }
 
   .reveal .roll span:after {
