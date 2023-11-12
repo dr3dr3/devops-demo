@@ -13,6 +13,7 @@
  *********************************************/
 :root {
 	--r-background-color: #e1ddd6;
+	--r-background-alt-color: #407794;
 	--r-main-font: Roboto, Helvetica, sans-serif;
 	--r-main-font-size: 36px;
 	--r-main-color: #4b4945;
@@ -54,11 +55,15 @@
     color: var(--r-strong-color);
   }
 
+  .darkmode-layer, .darkmode-toggle {
+    z-index: 500;
+  }
+
   .reveal-viewport {
 	background: #fff;
 	background-color: var(--r-background-color);
   }
-  
+
   .reveal {
 	font-family: var(--r-main-font);
 	font-size: var(--r-main-font-size);

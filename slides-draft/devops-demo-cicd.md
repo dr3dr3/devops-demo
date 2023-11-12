@@ -14,7 +14,7 @@ title: DevOps Demo - CI/CD Flow
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1000" height="600" stroke="var(--r-main-color)" stroke-linecap="round" stroke-linejoin="round" fill="#fff" fill-rule="evenodd" font-family="Roboto" font-size="14" text-anchor="middle">
     <defs>
         <style>@font-face{font-family:"Open Sans";src:url(data:application/font-woff;charset=utf-8;base64,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) format("woff"); font-weight:bold;font-style:normal;}</style>
-        <path d="M0 0l4 5h-8z" id="A" class="C" stroke="none"/>
+        <path d="M0 0l4 5h-8z" id="A" class="C" stroke="2px"/>
         <path id="B" d="M35 0Q2.9321 0 .2456 29.3823"/>
         <path id="C" d="M149.3753.0521Q0 2.8451 0 155"/>
         <path id="D" d="M75 0Q2.8675 0 .1096 69.3764"/>
@@ -449,12 +449,11 @@ title: DevOps Demo - CI/CD Flow
 
 # Plan
 
-* Backlog (Ready)
-* Lean-Agile Mindset
+* [SAFe - Break features into stories](./safe-devops.md#feature-stories)
 
 ------
 
-## Backlog
+## Team Backlog
 
 * Using GitHub Project (link)
 * This is a team level backlog
@@ -475,17 +474,29 @@ title: DevOps Demo - CI/CD Flow
 
 # Code
 
-* This is the core work
-* Developer experience
+* This is the **core work**
+* Done in the Dev's local environement
+* Consider the Developer Experience (DX)
+
+------
+
+<!-- .slide: id="version-control" -->
+
+## Version Control
+
+* Using GitHub
+* Repositories: [github.com/dr3dr3](https://github.com/dr3dr3)
+* DevOps Demo - Solution Design (link)
 
 ------
 
 ## Local Dev Environment
 
 * Clone to own developer environment
-* npm run setup
-* npm run start
-* npm run build (and serve)
+* `npm run setup`
+* `npm run start`
+* `npm run build`
+* `npm run start` (i.e. serve locally)
 
 ------
 
@@ -494,11 +505,12 @@ title: DevOps Demo - CI/CD Flow
 * Use GitHub Codespace in repo
 * Everything setup
 * Same for everyone
-* Note: Still WIP
-
-Note: Some functionality that if use SLFB then it creates a codespace
+* Still a work-in-progress
+* If use SLFB... create a codespace for it
 
 ------
+
+<!-- .slide: id="developer-experience" -->
 
 ## Developer Experience
 
@@ -511,7 +523,7 @@ Note: Some functionality that if use SLFB then it creates a codespace
 
 [🗺️](#/diagram)
 
-# Commit
+# Commit - Locally
 
 * Commit "locally" first
 
@@ -521,10 +533,11 @@ Note: Some functionality that if use SLFB then it creates a codespace
 
 [🗺️](#/diagram)
 
-# Build
+# Build - Locally
 
 * Built within dev environment
 * `npm run build`
+* `npm run start` (i.e. serve locally)
 
 ---
 
@@ -532,11 +545,12 @@ Note: Some functionality that if use SLFB then it creates a codespace
 
 [🗺️](#/diagram)
 
-# Test
+# Test - Locally
 
 * Tested within dev environment
 * `npm run lint`
 * `npm run test`
+* Part of shift-left for quality
 
 Note: This just runs the standard tests that comes with Reveal-MD
 
@@ -548,11 +562,9 @@ Note: This just runs the standard tests that comes with Reveal-MD
 
 # SLFB
 
-Optional
-
-Once coding is completed locally...
-
-* Create short-lived-feature-branch
+* Optional
+* Once coding is completed locally...
+* Create **short-lived-feature-branch**
 * Useful when multiple changes at same time
 * Example: multiple devs / teams
 
@@ -562,16 +574,14 @@ Once coding is completed locally...
 
 [🗺️](#/diagram)
 
-# Commit
+# Commit (SLFB)
 
-Once branch created...
-
+* Once branch created...
 * Push commits to SLFB
-* Triggers continuous integration workflow
 * `on-pr-approved`
-* To deploy to Sandbox environment
-
-Note: Sandbox is an emphemeral environment just for the SLFB branch
+* Triggers **continuous integration** workflow
+* Will get deployed to Sandbox environment
+* SBX environments can be ephemeral
 
 ---
 
@@ -581,8 +591,11 @@ Note: Sandbox is an emphemeral environment just for the SLFB branch
 
 # Build
 
-* Build package for revevant solution
-* Output to _site folder (tar.gz)
+* **Build based on SLFB**
+* Same commands for all solutions
+* `npm run build` 
+* Output to `_site` folder
+* [SAFe - Continuous code integration](./safe-devops.md#code-integration)
 
 ---
 
@@ -592,13 +605,14 @@ Note: Sandbox is an emphemeral environment just for the SLFB branch
 
 # Test
 
-Run automated tests:
-
-* Unit tests
+* For build based on SLFB
+* **Pre-deployment tests**
+* Run automated tests on build output
+* Unit tests (for the solution)
 * Example: Check for broken links
-* Contract tests against stubs
+* WIP: Contract tests against stubs
 
-Note: Dont have contract tests in place yet. To do some as an example. 
+Note: Dont have contract tests in place yet. To do some as an example. Also, what tests are run is configurable in GitOps repo. 
 
 ---
 
@@ -610,10 +624,11 @@ Note: Dont have contract tests in place yet. To do some as an example.
 
 * Automatically deploy (if tests pass)
 * Call this environment "Sandbox" (SBX)
-* Is an emphemeral environment
-* Deploy SLFB code / package
+* Is an **ephemeral environment**
+* WIP: Ephemeral environments & lifecycle
+* Deploys built package based on SLFB
 
-Note: Emphemeral environment is future feature. Currently deploys to "CI" environment, being the solution repo's GitHub Pages. May create codespace in the GitHub repository. Team can run the codespce, serve the _site folder, and do manual testing (exploratory)
+Note: Emphemeral environment is a future feature. Currently deploys to "CI" environment, being the solution repo's GitHub Pages. May create codespace in the GitHub repository. Team can run the codespace, serve the _site folder, and do manual testing (exploratory). Update: Will deploy to Surge.Sh and have a workflow to manage the life (temporary) of that ephemeral environment.
 
 ------
 
@@ -627,19 +642,37 @@ Note: Emphemeral environment is future feature. Currently deploys to "CI" enviro
 
 # Release
 
-* Using dev toggles & features flags
+* Using **dark launches** & **features flags**
 * Set for on (to test change)
 * But also need to test when off
+* WIP: Feature flags using [Featurevisior](https://featurevisor.com/)
 
 Note: What config (including flags) is needed for testing and what needs to be tested in the SLFB and emphemeral environment
 
 ------
 
-## Dev Toggles
+<!-- .slide: id="dark-launches" -->
+
+## Dark Launches
+
+* Incomplete code not exposed to users
+* [SAFe DevOps - Dark Launches](./safe-devops.md#dark-launches)
+* Example: `slides-draft` folder
+* Example: React component not used
+* WIP: React components in Storybook
 
 ------
 
+<!-- .slide: id="feature-flags" -->
+
 ## Feature Flags 
+
+* Using [Featurevisior](https://featurevisor.com/)
+* "Feature management for devs with GitOps"
+* DevOps Demo: [flags.andredreyer.com](https://flags.andredreyer.com/)
+* Repo on [GitHub - dr3dr3-demo-ff](https://github.com/dr3dr3/devops-demo-ff)
+* Flags enabled per environment
+* [SAFe DevOps - Feature Flags](./safe-devops.md#feature-flags)
 
 ---
 
@@ -649,9 +682,22 @@ Note: What config (including flags) is needed for testing and what needs to be t
 
 # Observe
 
-* What emphemeral environments are created, running, etc
-* What SLFB branches are open
-* Are these short-lived?
+* Ephemeral environments (lifecycle)
+* SLFB branches (exist, age, etc)
+* WIP: Using KeepHQ for "single pane of glass"
+* Fun integration to [IFTTT](https://ifttt.com/)
+
+------
+
+## IFTTT Integration
+
+* CI/CD Workflow calls IFTTT webhook
+* IFTTT activates scenes on Nanoleaf lights
+* Shows when CI/CD kicked off
+* Shows SBX deployment (success/fail)
+* Shows CI deployment (success/fail)
+* Shows STG deployment (success/fail)
+* Shows PRD deployment (success/fail)
 
 ---
 
@@ -661,7 +707,9 @@ Note: What config (including flags) is needed for testing and what needs to be t
 
 # Test
 
-* Smoke testing for SLFB PR change
+* Post deployment tests
+* WIP: Smoke testing for SLFB PR change
+* WIP: Security tests (DevSecOps)
 
 ---
 
@@ -671,18 +719,21 @@ Note: What config (including flags) is needed for testing and what needs to be t
 
 # Trunk
 
-Either:
-
-* PR to merge SLFB to Main
-* TBD direct to Main
+* Change to `Main` from either:
+* Approved PR to merge SLFB to Main
+* Commit direct to Main (trunk-based dev)
+* WIP: Setup gated commits? (pre-commit)
 
 Note: How is PR created? Is this automated?
 
 ------
 
-Trunk Based Development
+<!-- .slide: id="trunk-based-development" -->
 
-* Always in a releaseable state
+## Trunk Based Development
+
+* Main branch always in a releaseable state
+* [SAFe - Trunk Based Development](./safe-devops.md#trunk-based-development)
 
 ---
 
@@ -690,11 +741,10 @@ Trunk Based Development
 
 [🗺️](#/diagram)
 
-# Commit
+# Commit (Main)
 
-* Triggers continuous deployment flow
-* To deploy to CI environment
-* Within continuous-integration.yml
+* Will get deployed to CI
+* Integrates changes within micro-frontend
 
 Note: CI is commit (remote, either SLFB or Trunk) to deploy to CI. Could argue that deploy to STG is "integration" (across whole solution). Continuous Deployment could cover deploy to SBX/CI/STG/CAN/PRD. Continuous Delivery is up to deploy to PRD.
 
@@ -706,13 +756,9 @@ Note: CI is commit (remote, either SLFB or Trunk) to deploy to CI. Could argue t
 
 # Build
 
-* Build package for revevant solution
-* This package will stored in artifact repository
-* "Build once, deploy many"
-
-Example: 
-* Reveal-MD)build output to _site folder 
-* Folder compressed to single file (tar.gz)
+* Build package for the micro-frontend
+* Package is stored in **artifact repository**
+* Stored after tests on build done
 
 Note: Currently need to merge to trunk for the CI flow. May need to look at building off the SLFB once PR is ready to go (so before merge to trunk).
 
@@ -724,11 +770,10 @@ Note: Currently need to merge to trunk for the CI flow. May need to look at buil
 
 # Test
 
-Run automated tests:
-
-* Unit tests
+* Run automated tests, including:
+* Unit tests for micro-frontend
 * Example: Check for broken links
-* Contract tests against stubs
+* WIP: Contract tests against stubs
 * Store package after tests pass
 
 Note: Contract tests are not there yet, but want atleast some as an example
@@ -742,8 +787,6 @@ Note: Contract tests are not there yet, but want atleast some as an example
 * Deployments use this package
 * For CI, STG, and PRD environments
 
-
-
 ---
 
 <!-- .slide: id="deploy2" -->
@@ -752,8 +795,8 @@ Note: Contract tests are not there yet, but want atleast some as an example
 
 # Deploy - CI
 
-* To Continuous Integration (CI) environment
-* Purpose is to test specific solution
+* Continuous Integration (CI) environment
+* Purpose is to test specific micro-frontend
 
 ---
 
@@ -763,8 +806,9 @@ Note: Contract tests are not there yet, but want atleast some as an example
 
 # Release
 
-* Dev toggles are off
-* Feature flags are on and off
+* Code under dev toggle not available
+* Feature flags for CI setup
+* Flags "on" so can test new features
 
 Note: How automate CI testing with flags on and off?
 
@@ -777,12 +821,7 @@ Note: How automate CI testing with flags on and off?
 # Observe
 
 * Deployment markers
-
-------
-
-## Deployment Markers
-
-Note: How would we do this? Just GitHub? Idea was to use Project as a dashboard
+* WIP: Use [Logz.io](https://logz.io/)
 
 ---
 
@@ -792,9 +831,9 @@ Note: How would we do this? Just GitHub? Idea was to use Project as a dashboard
 
 # Test
 
-Post deployment testing:
-
-* Smoke tests
+* Post deployment testing for CI
+* WIP: Smoke tests
+* Triggers **continuous deployment** workflow
 
 Note: Don't have these setup yet... need some examples.
 
@@ -806,9 +845,10 @@ Note: Don't have these setup yet... need some examples.
 
 # Deploy - STG
 
-* To Stage (STG) environment
-* Purpose is to test whole solution
-* STG is "production like"
+* Deploy to Stage (STG) environment
+* Automated if CI deployment passes
+* Purpose is to test whole front-end (together)
+* Stage is "production like" as possible
 
 ---
 
@@ -818,9 +858,9 @@ Note: Don't have these setup yet... need some examples.
 
 # Release
 
-* Dev toggles are off
-* Feature flags are on and off
-* Combinations across solutions?
+* Feature flags for STG setup
+* Flags set for what want in PRD (Blue)
+* Test flag combinations across whole frontend
 
 Note: How automate STG testing with flags on and off?
 
@@ -832,8 +872,9 @@ Note: How automate STG testing with flags on and off?
 
 # Observe
 
-* STG is always running
+* Stage is always running
 * Check its health / heart beat?
+* Deployment markers
 
 ------
 
@@ -849,10 +890,11 @@ Is this part of observe?
 
 # Test
 
+* Post deployment testing for Stage
 * Automated functional tests (i.e. PVT)
 * Manual exploratory tests?
 
-Note: Do we have a stage gate for exploratory testing. No! Do in Canary
+Note: Do we have a stage gate for exploratory testing. No! Do in Canary (PRD - Blue)
 
 ---
 
@@ -860,15 +902,37 @@ Note: Do we have a stage gate for exploratory testing. No! Do in Canary
 
 [🗺️](#/diagram)
 
-# Deploy - CAN
+# Deploy - PRD (blue)
 
-* To Canary (CAN) environment
+* Deploy to Production environment
+* Using [blue/green approach](./devops-demo-blue-green.md)
+* Blue is for deploying latest changes
 * Released to customers (small %)
 * Mitigates risk in real world conditions
 
 ------
 
-## Canary Release Strategy
+<!-- .slide: id="blue-green" -->
+
+## Blue / Green Deployment
+
+* [SAFe DevOps - Blue / Green Deployments](./safe-devops.md#blue-green-deployment)
+* AWS Route 53 for blue/green routing of domain
+* Blue limited to small % using [weighted routing](https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/routing-policy-weighted.html)
+* (Optional) Blue could use [geolocation](https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/routing-policy-geo.html)
+* (Optional) Could use automated [failover routing](https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/routing-policy-failover.html)
+* [SAFe DevOps - Selective Deployments](./safe-devops.md#selective-deployment)
+
+------
+
+<!-- .slide: id="self-service-deployment" -->
+
+## Self-Service Deployment
+
+* [SAFe DevOps - Self-Service Deployments](./safe-devops.md#self-service-deployment)
+* Manually trigger workflow in GitHub Actions
+* Within the `ss-pipeline` repo
+* WIP: Can target a specific build
 
 ---
 
@@ -878,8 +942,17 @@ Note: Do we have a stage gate for exploratory testing. No! Do in Canary
 
 # Release
 
-* Feature flags on (if ready)
-* Could be turned on in PRD (later)
+* Feature flags for PRD(Blue) setup
+* Flags set for what want in PRD (Blue)
+* Use flags to do **canary release**
+
+------
+
+## Canary Releases
+
+* Flags for Prod cover both blue and green
+* Can use flags to release to subset of users
+* Canary releases covers both blue and green
 
 ---
 
@@ -890,7 +963,7 @@ Note: Do we have a stage gate for exploratory testing. No! Do in Canary
 # Observe
 
 * Full observation of production environment
-* CAN and PRD share same observation scope
+* Prod Blue/Green share same observation scope
 
 Note: No obs setup yet. What could I cover?
 
@@ -902,19 +975,17 @@ Note: No obs setup yet. What could I cover?
 
 # Test
 
-PVT Testing:
-
-* Smoke tests
-* UI comparison testing?
-* Failures block PRD deployment
+* Post deployment testing for Prod (Blue)
+* Failures block PRD Green deployment
 
 ------
 
 ## Automated "Andon Cord"
 
 * Ops issues trigger "Andon Cord"
-* PRD deployments blocked
-* Resolve issues before CD flows to PRD
+* PRD Green deployments blocked
+* Resolve issues in STG and PRD Blue
+* Close "Andon Cord" to continue
 
 ---
 
@@ -922,15 +993,9 @@ PVT Testing:
 
 [🗺️](#/diagram)
 
-# Deploy - PRD
+# Deploy - PRD (green)
 
-* To production (PRD) environment
-* Released to customers (all)
-* Features flags decouples deployed vs released
-
-------
-
-## Deployed vs Released
+* Deploy to production (Green) environment
 
 ---
 
@@ -940,8 +1005,13 @@ PVT Testing:
 
 # Release
 
-* Feature flags control what is released
-* Released = Users can use it
+* Released to customers (all)
+* Feature flags for "release" (blue & green)
+* Features flags decouples deployed vs released
+
+------
+
+## Deployed vs Released
 
 ---
 
@@ -952,7 +1022,8 @@ PVT Testing:
 # Observe
 
 * Full observation of production environment
-* CAN and PRD share same observation scope
+* Prod Blue/Green share same observation scope
+* Observation = Continuous Testing
 
 Note: No obs setup yet. What could I cover?
 
@@ -964,27 +1035,29 @@ Note: No obs setup yet. What could I cover?
 
 # Test
 
-* Subset of CAN PVT testing
-* Failures block PRD deployment
-* Rollback of PRD?
+* Post deployment testing for PRD (Green)
+* But also continuous monitoring / testing
+* WIP: Automate rollbacks
 
 ------
 
-## Rollback
+## Rollback Approaches
 
-* Only if needed
-* Prefer to "fail forward"
-* How done???
+* Turn off features via feature flags
+* Switch beteen blue/green
+* Instant rollback (i.e. in Vercel)
 
----
+------
 
-# Test
+<!-- .slide: id="blue-green-switching" -->
 
-PVT Testing:
+## Blue / Green Switching
 
-* Smoke tests
-* UI comparison testing?
-* Failures block PRD deployment
+* [SAFe DevOps - Blue / Green Switching](./safe-devops.md#blue-green-switching)
+* WIP: Automate via GitHub Actions Workflow
+* Controlled via GitOps (configuration version control)
+* Automates changes to AWS Route 53 routing
+* Changes target for deploying active (blue) changes
 
 ---
 
@@ -1004,4 +1077,6 @@ PVT Testing:
 
 # Plan
 
-Feedback factors into planning
+* Feedback factors into planning
+* Continuous improvement
+* Both of Features and Enablers

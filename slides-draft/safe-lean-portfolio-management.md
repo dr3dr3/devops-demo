@@ -6,6 +6,8 @@ title: Scaled Agile Framework (SAFe) - Lean Portfolio Management
 
 # Lean Portfolio Management
 
+##### Scale Agile Framework (SAFe) 6.0
+
 ------
 
 Essential to achieving Business Agility
@@ -18,7 +20,9 @@ Essential to achieving Business Agility
 
 Scaled Agile, Inc is a protected Brand. These slides / presentations are neither endorsed by nor affiliated.. This is not official training or materials. 
 
-##### Visit: [scaledagile.com](https://scaledagile.com/)
+
+
+[scaledagile.com ![External Link](../assets/icon-ext-link.svg) ](https://scaledagile.com/)
 
 ------
 
