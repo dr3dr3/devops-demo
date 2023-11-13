@@ -1,0 +1,38 @@
+name: ON-ISSUE-LABELED
+run-name: Issue Labeled ( ${{ github.event.label.name }} )
+
+on:
+  issues:
+    types: [labeled]
+
+jobs: 
+
+  create-slfb:
+    name: Create SLFB
+    if: ${{ github.event.label.name == 'status-slfb' }}
+    uses: dr3dr3/ss-pipeline/.github/workflows/labelled-slfb.yml@main
+    permissions:
+      contents: write
+      issues: write
+      pull-requests: write
+    secrets: inherit
+
+  create-codespace:
+    name: Create Codespace for SLFB
+    if: ${{ github.event.label.name == 'status-codespace' }}
+    uses: dr3dr3/ss-pipeline/.github/workflows/labelled-codespace.yml@main
+    permissions:
+      contents: write
+      issues: write
+      pull-requests: write
+    secrets: inherit
+
+  create-pr:
+    name: Create PR for SLFB
+    if: ${{ github.event.label.name == 'status-pp' }}
+    uses: dr3dr3/ss-pipeline/.github/workflows/labelled-pull-request.yml@main
+    permissions:
+      contents: write
+      issues: write
+      pull-requests: write
+    secrets: inherit
