@@ -29,7 +29,7 @@ jobs:
 
   create-pr:
     name: Create PR for SLFB
-    if: ${{ github.event.label.name == 'status-pp' }}
+    if: ${{ github.event.label.name == 'status-pr' }}
     uses: dr3dr3/ss-pipeline/.github/workflows/labelled-pull-request.yml@main
     permissions:
       contents: write
