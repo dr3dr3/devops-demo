@@ -1,0 +1,46 @@
+# Trigger workflows on pull request review events
+name: ON-PR-APPROVAL
+run-name: PR Approved - Merge to Main for ${{ github.event.pull_request.head.ref }} 
+
+on:
+  pull_request_review:
+    types: [submitted]
+
+jobs: 
+
+  # Pre-requisite: PR exists, SBX built and passing, thus all checks passing in PR.
+  # GitHub is setup to delete SLFB after merge completed.
+  pr-merge: 
+    name: PR Merge
+    if: ${{ github.event.review.state == 'approved' }}
+    runs-on: ubuntu-latest
+    steps:
+
+      # This will checkout the SLFB based on github event SHA
+      - name: Checkout Feature Branch
+        uses: actions/checkout@v3
+
+      - name: Merge Pull Request
+        run: gh pr merge ${{ github.event.pull_request.head.ref }} --squash --subject "${{ github.event.pull_request.head.ref }}" --body "Short-lived feature branch ${{ github.event.pull_request.head.ref }} automerged by GitHub Action" --auto
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: GitHub Step Summary
+        run: echo "### PR Merge Success! :thumbsup:" >> $GITHUB_STEP_SUMMARY
+
+  # Need to trigger CI workflow here as won't run via on-push-main given merged by a GitHub workflow (above)
+  # Continuous integration workflow in 'ss-pipeline' repo
+  # continuous-integration:
+  #   name: CI on SLFB
+  #   needs: [pr-merge]
+  #   uses: dr3dr3/ss-pipeline/.github/workflows/continuous-integration.yml@main
+  #   with: 
+  #     feature: ${{ github.event.pull_request.head.ref }}
+  #     target-ref: ${{ github.sha }}
+  #     solution: 'revealmd'
+  #   permissions:
+  #     contents: write
+  #     pull-requests: write
+  #     pages: write
+  #     id-token: write
+  #   secrets: inherit
