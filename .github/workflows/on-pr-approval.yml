@@ -24,7 +24,7 @@ jobs:
       - name: Merge Pull Request
         run: gh pr merge ${{ github.event.pull_request.head.ref }} --squash --subject "${{ github.event.pull_request.head.ref }}" --body "Short-lived feature branch ${{ github.event.pull_request.head.ref }} automerged by GitHub Action" --auto
         env:
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GH_TOKEN: ${{ github.token }}
 
       - name: Comment on PR
         env:
