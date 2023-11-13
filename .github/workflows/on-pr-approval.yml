@@ -15,6 +15,7 @@ jobs:
     if: ${{ github.event.review.state == 'approved' }}
     runs-on: ubuntu-latest
     permissions:
+      contents: write
       pull-requests: write
     steps:
 
