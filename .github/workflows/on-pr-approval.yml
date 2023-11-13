@@ -25,6 +25,13 @@ jobs:
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
+      - name: Comment on PR
+        env:
+          GH_TOKEN: ${{ github.token }}    
+        run: |
+          gh pr comment ${{ github.event.pull_request.head.ref }} -b "### Pull request merged to Main
+          Triggered continous integration to CI environment"
+
       - name: GitHub Step Summary
         run: echo "### PR Merge Success! :thumbsup:" >> $GITHUB_STEP_SUMMARY
 
