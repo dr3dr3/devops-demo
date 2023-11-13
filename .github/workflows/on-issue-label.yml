@@ -10,7 +10,7 @@ jobs:
   create-slfb:
     name: Create SLFB
     if: ${{ github.event.label.name == 'status-slfb' }}
-    uses: dr3dr3/ss-pipeline/.github/workflows/labelled-slfb.yml@main
+    uses: dr3dr3/ss-pipeline/.github/workflows/labeled-slfb.yml@main
     permissions:
       contents: write
       issues: write
@@ -20,7 +20,7 @@ jobs:
   create-codespace:
     name: Create Codespace for SLFB
     if: ${{ github.event.label.name == 'status-codespace' }}
-    uses: dr3dr3/ss-pipeline/.github/workflows/labelled-codespace.yml@main
+    uses: dr3dr3/ss-pipeline/.github/workflows/labeled-codespace.yml@main
     permissions:
       contents: write
       issues: write
@@ -30,7 +30,7 @@ jobs:
   create-pr:
     name: Create PR for SLFB
     if: ${{ github.event.label.name == 'status-pr' }}
-    uses: dr3dr3/ss-pipeline/.github/workflows/labelled-pull-request.yml@main
+    uses: dr3dr3/ss-pipeline/.github/workflows/labeled-pull-request.yml@main
     permissions:
       contents: write
       issues: write
