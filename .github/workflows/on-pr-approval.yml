@@ -14,9 +14,7 @@ jobs:
     name: PR Merge
     if: ${{ github.event.review.state == 'approved' }}
     runs-on: ubuntu-latest
-    permissions:
-      contents: write
-      pull-requests: write
+    permissions: write-all
     steps:
 
       # This will checkout the SLFB based on github event SHA
