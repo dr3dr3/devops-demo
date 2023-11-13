@@ -1,6 +1,6 @@
 # Trigger workflows on pull request review events
 name: ON-PR-APPROVED
-run-name: PR approved for ${{ github.event.pull_request.head.ref }}
+run-name: PR approved for ${{ github.event.pull_request.head.ref }} (state = ${{ github.event.review.state }})
 
 on:
   pull_request_review:
@@ -11,7 +11,7 @@ jobs:
   # Continuous integration workflow in 'ss-pipeline' repo
   continuous-integration:
     name: CI
-    if: ${{ github.event.review.state == 'approved' && vars.CI_PATTERN == 'TBD_PR' }}
+    if: ${{ github.event.review.state == 'approved' }}
     uses: dr3dr3/ss-pipeline/.github/workflows/continuous-integration.yml@main
     with: 
       feature: ${{ github.event.pull_request.head.ref }}
