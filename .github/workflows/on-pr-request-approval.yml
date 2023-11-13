@@ -1,23 +1,20 @@
-name: ON-PUSH-MAIN
-run-name: Continuous Integration on event ${{ github.event_name }}
+# Trigger workflows on pull request review events
+name: ON-PR-REQUEST-APPROVAL
+run-name: PR approval requested for ${{ github.event.pull_request.head.ref }}
 
 on:
-  push:
-    branches: [main]
-    paths-ignore:
-      - '.github/**'
-      - 'slides-draft/**'
+  pull_request:
+    types: [labeled]
 
-### Add filters for what file changes (i.e. ignore .github workflow change and slide-drafts changes)
-
-jobs:
+jobs: 
 
   # Continuous integration workflow in 'ss-pipeline' repo
   continuous-integration:
-    name: CI on Main
+    name: CI on SLFB
+    if: ${{ github.event.label.name == 'status-pr-to-approve' }}
     uses: dr3dr3/ss-pipeline/.github/workflows/continuous-integration.yml@main
     with: 
-      feature: ${{ github.event.head_commit.message }}
+      feature: ${{ github.event.pull_request.head.ref }}
       target-ref: ${{ github.sha }}
       solution: 'revealmd'
     permissions:
