@@ -15,7 +15,7 @@ jobs:
   # Continuous integration workflow in 'ss-pipeline' repo
   continuous-integration:
     name: CI on Main
-    uses: dr3dr3/ss-pipeline/.github/workflows/continuous-integration.yml@main
+    uses: ${{ github.repository_owner }}/ss-pipeline/.github/workflows/continuous-integration.yml@main
     with: 
       feature: ${{ github.event.head_commit.message }}
       target-ref: ${{ github.sha }}

@@ -13,12 +13,13 @@
  *********************************************/
 :root {
 	--r-background-color: #e1ddd6;
-	--r-background-alt-color: #407794;
+	--r-background-alt-color: #344a86;
   --r-diagram-fill-color: #fff;
   --r-diagram-stroke-color: #4b4945;
 	--r-main-font: Roboto, Helvetica, sans-serif;
 	--r-main-font-size: 36px;
 	--r-main-color: #4b4945;
+	--r-main-alt-color: #e1ddd6;
 	--r-block-margin: 20px;
 	--r-heading-margin: 0 0 20px 0;
 	--r-heading-font: Acme, Helvetica, sans-serif;
@@ -54,7 +55,7 @@
   section.has-dark-background h4, 
   section.has-dark-background h5, 
   section.has-dark-background h6 {
-    color: var(--r-strong-color);
+    color: var(--r-main-alt-color);
   }
 
   .darkmode-layer, .darkmode-toggle {

@@ -32,12 +32,6 @@ The purpose of these presentations are to help me apply these concepts and pract
 
 ---
 
-# 💡
-
-Start with an idea
-
----
-
 <!-- .slide: id="continuous-delivery" -->
 
 ## The Continuous Delivery Pipeline
@@ -49,9 +43,81 @@ Start with an idea
 
 ---
 
+# 💡
+
+Start with an idea
+
+---
+
 <!-- .slide: id="continuous-exploration" data-background-color="var(--r-background-alt-color)" -->
 
 ## Continuous Exploration
+
+---
+
+<!-- .slide: id="hypothesize" -->
+
+## Hypothesize
+
+* Lean startup thinking
+* Innovation accounting
+
+---
+
+<!-- .slide: id="research" -->
+
+## Collaborate & Research
+
+* Primary market research
+* Customer visits & Gemba walks
+* Secondary market research
+* Lean UX thinking & MMFs
+
+------
+
+### Collaboration Roles
+
+* Product Manager
+* System Architects
+* Customers
+* Business Owners and Stakeholders
+* Product Owners & Teams
+
+------
+
+### Artifacts
+
+* Personas to focus design work
+* Building empathy for the user
+* Designing the customer experience
+* Customer journey maps
+
+---
+
+<!-- .slide: id="architect" -->
+
+## Architect
+
+* Architectural Runway
+* Solution Intent?
+* Architecting for releasability
+* Architecting for testability
+* Separating deployment & release
+* Architecting for operations
+* Threat modelling
+
+---
+
+<!-- .slide: id="synthesize" -->
+
+## Synthesize
+
+* Create the solution vision
+* Maintaining the solution roadmap
+* Defining a backlog of features and enablers
+* Behaviour-driven development (BDD)
+* Economic prioritization
+* PI Planning
 
 ---
 
@@ -84,7 +150,7 @@ Start with an idea
 * Further decomposed in Team Backlog
 * Team-level stories are atomic
 * Adopt #NoEstimates approach
-* [DevOps Demo - Plan](./devops-demo-cicd.md#plan1)
+* [DevOps Demo - Plan 🔗](./devops-demo-cicd.md#plan1)
 
 ------
 
