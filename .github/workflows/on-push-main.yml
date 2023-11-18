@@ -1,5 +1,5 @@
 name: ON-PUSH-MAIN
-run-name: Continuous Integration on Merge to Trunk
+run-name: Continuous Integration on Merge to Trunk ${{ github.repository_owner }}
 
 on:
   push:
